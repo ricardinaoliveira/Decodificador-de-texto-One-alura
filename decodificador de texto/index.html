@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura challenge - Desafio 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+   <header>
+       <img class ="slogan_alura"src="/img/slogan.png" alt="slogan da alura"/>
+   </header>
+   <main class="container">
+      <section class="campo_texto_botoes">
+         <textarea class="campo_texto" id= "textarea2" rows="4" cols="41" placeholder="Digite seu texto"></textarea>
+         <div class="container2">
+            <img src="./img/atenção.png" alt="imagem de atenção">
+            <h6>Apenas letras minúsculas e sem acento.</h6>
+         </div>
+         <div class = "botoes">
+            <button class="botao_criptografar" onclick="botaoIncriptar()">Criptografar</button>
+            <button class="botao_descriptografar"  onclick="botaoDescriptografar()">Descriptografar</button>
+         </div>
+      </section>
+      <section>
+         <div class="container_campo_resposta">
+            <textarea class="campo_resposta" id= "textarea1" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada Digite um texto que você deseja criptografar ou descriptografar." p></textarea>
+            <button class="botao_copiar" id="botao_copiar"  onclick="copiarTexto()">Copiar</button> 
+         </div>
+      </section>
+   </main>
+   <footer>
+      <h5>Desenvolvido por Ricardiana Oliveira - desafio challenge/Alura/ONE</h5>
+   </footer>
+   <script src="script.js"></script>
+</body>
+
+</html>
